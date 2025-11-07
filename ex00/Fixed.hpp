@@ -6,7 +6,7 @@
 /*   By: hparveen <hparveen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 09:51:10 by hparveen          #+#    #+#             */
-/*   Updated: 2025/11/07 10:22:09 by hparveen         ###   ########.fr       */
+/*   Updated: 2025/11/07 10:23:55 by hparveen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@
 class Fixed
 {
     private:
-        int                 fixedPointValue;
-        static const int    fractionalBits = 8;
+        int                 _rawBits;
+        static const int    _fractionalBits = 8;
 
     public:
         Fixed();
