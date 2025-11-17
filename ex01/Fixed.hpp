@@ -6,7 +6,7 @@
 /*   By: hparveen <hparveen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 10:37:48 by hparveen          #+#    #+#             */
-/*   Updated: 2025/11/07 10:54:52 by hparveen         ###   ########.fr       */
+/*   Updated: 2025/11/17 10:10:08 by hparveen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@
 #define YELLOW "\033[33m"
 #define BLUE "\033[34m"
 #define ORANGE "\033[38;5;208m"
-#define MAGENTA "\033[35m"
 #define CYAN "\033[36m"
 #define RESET "\033[0m"
 
