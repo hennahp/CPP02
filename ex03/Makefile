@@ -9,6 +9,7 @@ RESET = \033[0m
 
 SRCS =	main.cpp \
 		Point.cpp \
+		Fixed.cpp \
 		bsp.cpp
 
 OBJS = $(SRCS:.cpp=.o)
@@ -28,7 +29,7 @@ clean:
 
 fclean: clean
 	@rm -f $(NAME)
-	@echo "$(YELLOW)$(NAME) executable removed.$(RESET)"
+	@echo "$(RED)$(NAME) executable removed.$(RESET)"
 
 re: fclean all
 

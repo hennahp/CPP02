@@ -6,7 +6,7 @@
 /*   By: hparveen <hparveen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 12:25:35 by hparveen          #+#    #+#             */
-/*   Updated: 2025/11/17 12:28:39 by hparveen         ###   ########.fr       */
+/*   Updated: 2025/11/18 08:56:04 by hparveen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,30 +14,25 @@
 
 Fixed::Fixed() : _rawBits(0)
 {
-    std::cout << GREEN << "Default constructor called" << RESET << std::endl;
 }
 
 Fixed::Fixed(const int n)
 {
-    std::cout << BLUE << "Int constructor called" << RESET << std::endl;
     this->_rawBits = n << _fractionalBits;
 }
 
 Fixed::Fixed(const float f)
 {
-    std::cout << ORANGE << "Float constructor called" << RESET << std::endl;
     this->_rawBits = roundf(f * (1 << _fractionalBits));
 }
 
 Fixed::Fixed(const Fixed &other)
 {
-    std::cout << YELLOW << "Copy constructor called" << RESET << std::endl;
     *this = other;
 }
 
 Fixed &Fixed::operator=(const Fixed &other)
 {
-    std::cout << CYAN << "Copy assignment operator called" << RESET << std::endl;
     if (this != &other)
         this->_rawBits = other.getRawBits();
     return *this;
@@ -45,7 +40,6 @@ Fixed &Fixed::operator=(const Fixed &other)
 
 Fixed::~Fixed()
 {
-    std::cout << RED << "Destructor called" << RESET << std::endl;
 }
 
 int Fixed::getRawBits(void) const
