@@ -6,7 +6,7 @@
 /*   By: hparveen <hparveen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 12:25:46 by hparveen          #+#    #+#             */
-/*   Updated: 2025/11/18 09:24:36 by hparveen         ###   ########.fr       */
+/*   Updated: 2025/11/18 11:56:30 by hparveen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,6 @@
 # define POINT_HPP
 
 # include "Fixed.hpp"
-
-# define CYAN "\033[36m"
-# define GREEN "\033[32m"
-# define RESET "\033[0m"
 
 class Point
 {
